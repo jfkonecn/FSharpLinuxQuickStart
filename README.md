@@ -4,13 +4,13 @@
 
 1. [Install Dotnet](https://dotnet.microsoft.com/download)
 
-2. Check Install
+2. Check the Install
 
 ```bash
 dotnet --version
 ```
 
-3. Create Solution
+3. Create the Solution
 
 ```bash
 dotnet new sln --name FSharpQuickStart
@@ -38,14 +38,14 @@ dotnet new <Search Text> --search
 dotnet new nunit -lang "F#" -o tests/FSharpQuickStart.Tests
 ```
 
-6. Add Projects to Solution
+6. Add Projects to the Solution
 
 ```bash
 dotnet sln add src/FSharpQuickStart.Console
 dotnet sln add tests/FSharpQuickStart.Tests
 ```
 
-7. Add Reference to Console Project to Test Project
+7. Add a Reference to the Console Project to Test Project
 
 ```bash
 dotnet add tests/FSharpQuickStart.Tests reference src/FSharpQuickStart.Console
@@ -53,7 +53,7 @@ dotnet add tests/FSharpQuickStart.Tests reference src/FSharpQuickStart.Console
 
 ## Add/Remove Files From Projects
 
-1. Add/Remove the .fs File in Your Project Folder
+1. Add/Remove the .fs File in your Project Folder
 
 2. Add/Remove the File Reference in the Project File
 
@@ -71,8 +71,8 @@ This is an example from the [Test Project](./tests/FSharpQuickStart.Tests/FSharp
 
   <ItemGroup>
     <!-- NOTE THE FSHARP COMPILER WILL LOOK AT THESE FILES IN ORDER -->
-    <!-- FOR EXAMPLE IF YOU HAVE A FUNCTION FROM UnitTest1.fs USED IN Program.fs  -->
-    <!-- THEN IT MUST COME AFTER LIKE SO -->
+    <!-- FOR EXAMPLE IF YOU HAVE A FUNCTION FROM UnitTest1.fs USED IN Program.fs -->
+    <!-- THEN Program.fs MUST COME AFTER LIKE SO -->
     <Compile Include="UnitTest1.fs" />
     <Compile Include="Program.fs" />
     <!-- To Add MyFile.fs -->
@@ -94,7 +94,7 @@ This is an example from the [Test Project](./tests/FSharpQuickStart.Tests/FSharp
 </Project>
 ```
 
-## Running Solution
+## Running the Solution
 
 - Run Console Project
 
@@ -112,8 +112,8 @@ dotnet test
 
 1. Search for Nuget at the [here](https://www.nuget.org/)
 
-2. Add Nuget Package to a Project
+2. Add Nuget Package to a Project ()
 
 ```bash
-dotnet add src/FSharpQuickStart.Console package Newtonsoft.Json
+dotnet add src/FSharpQuickStart.Console package <Package Name>
 ```
